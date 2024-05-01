@@ -7,10 +7,9 @@ namespace CollectExcC01Lib
     {
         private int dni;
         private string name;
-        private int gamesPlayed;      
-        private int totalGoals; //acumulador
 
-        private float averageGoal;
+        private int gamesPlayed;      
+        private int totalGoals; 
 
         //NOTA: Salvo patron Singletone NUNCA se llamaria a este CONST desde fuera ?
         private Player() :this(0,"",0,0) { 
@@ -31,22 +30,15 @@ namespace CollectExcC01Lib
 
         public int Dni { get => dni; set => dni = value; }
         public string Name { get => name; set => name = value; }
-        public int GamesPlayed { get => gamesPlayed; set => gamesPlayed = value; }
-        public float AverageGoal { get => averageGoal; set => averageGoal = value; }
-        public int TotalGoals { get => totalGoals; set => totalGoals = value; }
 
-        public float GetAverageGoals() {
-            averageGoal = (float) this.totalGoals / gamesPlayed;
-            return averageGoal;
+        public int GamesPlayed { get => gamesPlayed; }
+        public float AverageGoal {
+            get {
+                float averageGoal = (float) totalGoals / gamesPlayed;
+                return averageGoal;
+            }
         }
-
-        public String ShowData() { 
-            StringBuilder sb = new StringBuilder();
-            sb.AppendLine($"jugador.dni={dni}, jugador.nombre={name}, jugador.partido_jugados={gamesPlayed}, " +
-                $"jugador.promedio_goles={averageGoal}, jugador.cantidad_goles={totalGoals}");
-
-            return sb.ToString();
-        }
+        public int TotalGoals { get => totalGoals;}
 
         public static bool operator == ( Player left, Player right ){
             return left.dni.Equals( right.dni );
@@ -57,7 +49,8 @@ namespace CollectExcC01Lib
 
         public override string ToString() {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine($"jugador.nombre={name}-jugador.dni={dni}-jugador.partidos_jugados={gamesPlayed}-jugador.goles_totales={totalGoals}");
+            sb.AppendLine($"jugador.nombre={name}-jugador.dni={dni}-jugador.partidos_jugados={gamesPlayed}-jugador.goles_totales={totalGoals}" +
+                $"-jugador.promedio-goles{AverageGoal}");
             return sb.ToString();
         }
 
