@@ -25,7 +25,8 @@ namespace WFormExcI02LogInLib
 
         public override string ToString() {
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.AppendLine($"curso.nombre={name}-curso.descripcion={description}");
+            stringBuilder.AppendLine($" -curso.nombre={name}");
+            stringBuilder.AppendLine($" -curso.descripcion={description}");
             return stringBuilder.ToString();
 
         }

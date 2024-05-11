@@ -29,9 +29,12 @@ namespace WFormExcI02LogInLib
 
         public override string ToString() {
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.AppendLine($"ingresante.nombre={name}-ingresante.edad={age}-" +
-                $"ingresante.domicilio={address}-ingresante.pais={country}-ingresante.genero={gender}-" +
-                $"ingresante.cursos-");
+            stringBuilder.AppendLine($"-ingresante.nombre={name}");
+            stringBuilder.AppendLine($"-ingresante.edad={age}-");
+            stringBuilder.AppendLine($"-ingresante.domicilio={address}");
+            stringBuilder.AppendLine($"-ingresante.pais={country}");
+            stringBuilder.AppendLine($"-ingresante.genero={gender}-");
+            stringBuilder.AppendLine($"-ingresante.cursos: ");
             foreach (Course course in courses) {
                 stringBuilder.Append(course.ToString());
             }

@@ -47,31 +47,20 @@ namespace WFormExcI02LogInWForm
             List<Course> courses = new List<Course>();
             if (((CheckBox)(grb_courses.Controls["cbx_csharp"])).Checked)
                 courses.Add(new Course(Course.C_SHARP, "course csharp"));
-            else if (((CheckBox)(grb_courses.Controls["cbx_cplus"])).Checked)
+            if (((CheckBox)(grb_courses.Controls["cbx_cplus"])).Checked)
                 courses.Add(new Course(Course.C_PLUS, "course cplusplus"));
-            else if (((CheckBox)(grb_courses.Controls["cbx_jscript"])).Checked)
+            if (((CheckBox)(grb_courses.Controls["cbx_jscript"])).Checked)
                 courses.Add(new Course(Course.J_SCRIPT, "course java script"));
 
             string country = (string)lbx_countries.SelectedItem;
             Entrant entrant = new Entrant(courses, address, age, gender, name, country);
 
-            Console.WriteLine("---->" + entrant.ToString());
             MessageBox.Show(entrant.ToString());
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
+        private void Form1_Load(object sender, EventArgs e) {
             Console.WriteLine("---FORMA LOAD-----");
-            Debug.WriteLine("---FORMA LOAD-----");
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Console.WriteLine("---button1_Click-----");
-            Debug.WriteLine("---button1_Click----");
-
         }
     }
 }
