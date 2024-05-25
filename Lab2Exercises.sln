@@ -31,9 +31,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WFormExcI02LogInWForm", "WF
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PoliExcI01SobEscAdvCons", "PoliExcI01SobEscAdvCons\PoliExcI01SobEscAdvCons.csproj", "{3FB972C1-E1C1-408D-AA19-E7195E2AF3AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFormExcC03UIBinLib", "WFormExcC03UIBinLib\WFormExcC03UIBinLib.csproj", "{679D2BC8-11E3-4C73-9874-37F978C6263F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WFormExcC03UIBinLib", "WFormExcC03UIBinLib\WFormExcC03UIBinLib.csproj", "{679D2BC8-11E3-4C73-9874-37F978C6263F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFormExcC03UIBinWForm", "WFormExcC03UIBinWForm\WFormExcC03UIBinWForm.csproj", "{253BEC11-1B4E-490D-8703-6961BE086470}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WFormExcC03UIBinWForm", "WFormExcC03UIBinWForm\WFormExcC03UIBinWForm.csproj", "{253BEC11-1B4E-490D-8703-6961BE086470}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcpExcI02AtrapPuedesUI", "ExcpExcI02AtrapPuedesUI\ExcpExcI02AtrapPuedesUI.csproj", "{C2BD4D88-41A1-4F07-AB0D-E90D3E371768}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcpExcI02AtrapPuedesLibs", "ExcpExcI02AtrapPuedesLibs\ExcpExcI02AtrapPuedesLibs.csproj", "{60787BA2-086C-4697-B1B5-FE410215CFD1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +109,14 @@ Global
 		{253BEC11-1B4E-490D-8703-6961BE086470}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{253BEC11-1B4E-490D-8703-6961BE086470}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{253BEC11-1B4E-490D-8703-6961BE086470}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2BD4D88-41A1-4F07-AB0D-E90D3E371768}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2BD4D88-41A1-4F07-AB0D-E90D3E371768}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2BD4D88-41A1-4F07-AB0D-E90D3E371768}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2BD4D88-41A1-4F07-AB0D-E90D3E371768}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60787BA2-086C-4697-B1B5-FE410215CFD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60787BA2-086C-4697-B1B5-FE410215CFD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60787BA2-086C-4697-B1B5-FE410215CFD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60787BA2-086C-4697-B1B5-FE410215CFD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
